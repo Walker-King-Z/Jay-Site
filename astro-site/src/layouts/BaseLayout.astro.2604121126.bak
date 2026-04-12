@@ -1,0 +1,35 @@
+---
+import "../styles/global.css";
+
+const { title } = Astro.props;
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title ? `${title} | Jay 的博客` : "Jay 的博客"}</title>
+  </head>
+
+  <body>
+
+    <header class="site-header">
+      <h1>
+        <a href="/">Jay 的博客</a>
+      </h1>
+      <nav>
+        <a href="/">首页</a>
+        <a href="/posts/">文章</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <p>© {new Date().getFullYear()} Jay</p>
+    </footer>
+
+  </body>
+</html>

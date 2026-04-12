@@ -1,0 +1,43 @@
+---
+const stats = {
+  todayViews: "--",
+  weekViews: "--",
+  comments: "--",
+};
+---
+
+<aside class="aside-column">
+  <section class="sidebar-card card">
+    <h3>关于我</h3>
+    <p>
+      我是一个网络工程系的学生，喜欢技术、折腾和记录。 在这里会放我的博客文章、项目过程、学习笔记，以及一些认真生活的痕迹。 当然，这里也会有我的好朋友跟我一块分享他的一些技术见解～
+    </p>
+
+    <div class="tag-list" style="margin-top: 16px;">
+      <span class="tag-chip">Astro</span>
+      <span class="tag-chip">Markdown</span>
+      <span class="tag-chip">Cloudflare Pages</span>
+      <span class="tag-chip">Giscus</span>
+    </div>
+  </section>
+
+  <section class="sidebar-card card">
+    <h3>站点概览</h3>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-label">今日访问量</div>
+        <div class="stat-value">{stats.todayViews}</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">近 7 天阅读量</div>
+        <div class="stat-value">{stats.weekViews}</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">评论量</div>
+        <div class="stat-value">{stats.comments}</div>
+      </div>
+    </div>
+  </section>
+</aside>

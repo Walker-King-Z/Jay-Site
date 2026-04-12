@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  return posts.map((post) => ({
+    params: { slug: post.data.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{post.data.title}</title>
+    <meta name="description" content={post.data.description} />
+  </head>
+  <body>
+    <main style="max-width: 800px; margin: 40px auto; padding: 0 16px;">
+      <p><a href="/posts/">← 返回文章列表</a></p>
+      <h1>{post.data.title}</h1>
+      <p style="color: #666;">{post.data.date.toLocaleDateString("zh-CN")}</p>
+
+      {post.data.categories.length > 0 && (
+        <p>分类：{post.data.categories.join(" / ")}</p>
+      )}
+
+      {post.data.tags.length > 0 && (
+        <p>标签：{post.data.tags.join(" / ")}</p>
+      )}
+
+      <hr />
+
+      <article>
+        <Content />
+      </article>
+    </main>
+  </body>
+</html>

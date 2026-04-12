@@ -1,0 +1,79 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Sidebar from "../../components/Sidebar.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  return posts.map((post) => ({
+    params: { slug: post.data.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const formattedDate = new Date(post.data.date).toLocaleDateString("zh-CN", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const categories = post.data.categories || [];
+const tags = post.data.tags || [];
+---
+
+<BaseLayout
+  title={`${post.data.title} | Jay 的博客`}
+  description={post.data.description || post.data.title}
+>
+  <div class="content-grid">
+    <div class="main-column">
+      <article class="article card">
+        <a class="back-link" href="/posts/">← 返回文章列表</a>
+
+        <header class="article-header">
+          <h1 class="article-title">{post.data.title}</h1>
+
+          <div class="article-meta">
+            <span>{formattedDate}</span>
+          </div>
+
+          {(categories.length > 0 || tags.length > 0) && (
+            <div class="article-taxonomy">
+              {categories.length > 0 && (
+                <div class="taxonomy-group">
+                  <span class="taxonomy-label">分类</span>
+                  <div class="taxonomy-items">
+                    {categories.map((category: string) => (
+                      <span class="taxonomy-chip">{category}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {tags.length > 0 && (
+                <div class="taxonomy-group">
+                  <span class="taxonomy-label">标签</span>
+                  <div class="taxonomy-items">
+                    {tags.map((tag: string) => (
+                      <span class="taxonomy-chip">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+        </header>
+
+        <div class="prose">
+          <Content />
+        </div>
+      </article>
+    </div>
+
+    <Sidebar />
+  </div>
+</BaseLayout>

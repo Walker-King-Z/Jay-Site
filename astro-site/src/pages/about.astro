@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Sidebar from "../components/Sidebar.astro";
+---
+
+<BaseLayout title="关于 | Jay 的博客" description="关于 Jay 的个人介绍页面">
+  <div class="content-grid">
+    <div class="main-column">
+      <section class="hero card">
+        <h1>关于我</h1>
+        <p>
+          我是张新杰，一个计算机网络工程系的学生。
+          我喜欢技术、折腾、写东西，也喜欢把自己做过的事情认真记录下来。
+        </p>
+      </section>
+
+      <section class="section card">
+        <h2>我在做什么</h2>
+        <p>
+          目前我主要关注华为昇腾系列的学习、博客建设、个人项目（提上日程了已经，哈哈哈哈），以及一些和数字生活相关的折腾。
+          这个博客我计划会长期维护，既是我的文章站点，也是我的个人主页、一张赛博名片～
+        </p>
+      </section>
+
+      <section class="section card">
+        <h2>这个博客会写什么</h2>
+        <p>
+          我会在这里记录技术学习、开发过程、设备使用体验、踩坑排查，以及阶段性的思考和总结。
+          它不只是一个“发文章的地方”，也会是我未来持续更新的个人名片。
+        </p>
+      </section>
+
+      <section class="section card">
+        <h2>联系方式</h2>
+        <p>
+          这一部分后面可以补充邮箱、GitHub、社交平台等链接。
+        </p>
+      </section>
+    </div>
+
+    <Sidebar />
+  </div>
+</BaseLayout>

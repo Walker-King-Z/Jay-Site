@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const posts = (await getCollection("posts"))
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 5);
+---
+
+<BaseLayout title="Jay 的博客" description="Jay 的个人主页与博客">
+  <section class="hero card">
+    <h1>你好，这里是 Jay。</h1>
+    <p>
+      一名计算机系学生，喜欢技术、折腾和记录。
+      这里会放我的博客文章、项目过程、学习笔记，以及一些认真生活的痕迹。
+    </p>
+
+    <div class="hero-actions">
+      <a class="button button-primary" href="/posts/">查看文章</a>
+      <a class="button" href="/about/">关于我</a>
+    </div>
+  </section>
+
+  <section class="section card">
+    <h2>最新文章</h2>
+
+    <ul class="post-list">
+      {posts.map((post) => (
+        <li class="post-item">
+          <a href={`/posts/${post.data.slug}/`}>
+            <div class="post-item-title">{post.data.title}</div>
+            <div class="post-item-meta">
+              {new Date(post.data.date).toLocaleDateString("zh-CN")}
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="section card">
+    <h2>我在这里记录什么</h2>
+    <p>
+      主要会写技术折腾、设备使用体验、开发记录、博客建设，还有一些阶段性的学习总结。
+      这个站点也会作为我的长期个人主页持续维护下去。
+    </p>
+  </section>
+</BaseLayout>

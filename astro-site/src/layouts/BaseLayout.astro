@@ -1,0 +1,98 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Jay 的博客",
+  description = "Jay 的个人主页与博客，记录技术、折腾与生活。",
+} = Astro.props;
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="site-brand" href="/">Jay 的博客</a>
+
+        <nav class="site-nav">
+          <a href="/">首页</a>
+          <a href="/posts/">文章</a>
+          <a href="/about/">关于</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      © {new Date().getFullYear()} Jay · Powered by Astro
+    </footer>
+
+
+    <script is:inline>
+      function setupCodeBlocks() {
+        const pres = document.querySelectorAll("article .prose pre");
+
+        pres.forEach((pre) => {
+          if (pre.parentElement?.classList.contains("code-block-wrapper")) return;
+
+          const wrapper = document.createElement("div");
+          wrapper.className = "code-block-wrapper";
+
+          pre.parentNode.insertBefore(wrapper, pre);
+          wrapper.appendChild(pre);
+
+          const button = document.createElement("button");
+          button.className = "copy-code-button";
+          button.type = "button";
+          button.textContent = "复制";
+
+          button.addEventListener("click", async () => {
+            const code = pre.querySelector("code");
+            const text = code?.innerText ?? pre.innerText;
+
+            try {
+              await navigator.clipboard.writeText(text);
+              button.textContent = "已复制";
+              button.classList.add("copied");
+
+              window.setTimeout(() => {
+                button.textContent = "复制";
+                button.classList.remove("copied");
+              }, 1600);
+            } catch {
+              button.textContent = "失败";
+              window.setTimeout(() => {
+                button.textContent = "复制";
+              }, 1600);
+            }
+          });
+
+          wrapper.appendChild(button);
+        });
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", setupCodeBlocks);
+      } else {
+        setupCodeBlocks();
+      }
+    </script>
+
+  </body>
+</html>
