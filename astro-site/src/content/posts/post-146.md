@@ -2,9 +2,9 @@
 title: "ESXI重启时报错：vmkapi_v2_1_0_0_vmkernel_shim loaded success"
 date: 2022-04-10
 slug: "esxi重启时报错：vmkapi_v2_1_0_0_vmkernel_shim-loaded-success"
-categories: ["搞机技巧", "资料库"]
-tags: []
-description: ""
+categories: ["搞机技巧", "资料库", "服务器运维", "Debug"]
+tags: ["虚拟化", "ESXi"]
+description: "解决服务器内存扩容后 ESXI 启动报错的问题"
 wordpressId: 146
 ---
 我今天往服务器上面新增加了16GiB 的内存，因为原本我只有8GiB，安装了群晖和HomeAssistant过后就没法继续搭建其他虚拟机了，于是我就去买了4条4GiB的内存，回到家兴冲冲地ESXi中关闭虚拟机，开启维护模式，关闭物理机，插卡，重启…………

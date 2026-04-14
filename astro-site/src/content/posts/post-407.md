@@ -4,7 +4,7 @@ date: 2024-08-04
 slug: "记录关于解决yourls系统移动部署后出现404的方法"
 categories: ["搞机技巧"]
 tags: ["404", "YOURLS", "伪静态"]
-description: ""
+description: "宝塔面板迁移过后，YOURLS 项目的构建错误"
 wordpressId: 407
 ---
 ### 问题描述

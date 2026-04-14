@@ -2,9 +2,9 @@
 title: "查看B站账号注册时间"
 date: 2022-02-06
 slug: "查看b站账号注册时间"
-categories: ["实用工具"]
-tags: []
-description: ""
+categories: ["搞机技巧"]
+tags: ["B站", "注册时间"]
+description: "一个查询 B 站账号注册时间的简单方法"
 wordpressId: 130
 ---
 所需工具：一台电脑，一双眼睛，一双“灵巧”的双手~

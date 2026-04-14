@@ -3,8 +3,8 @@ title: "Windows 7 激活码（拨号激活）"
 date: 2022-02-08
 slug: "windows-7-激活码（拨号激活）"
 categories: ["搞机技巧", "资料库"]
-tags: []
-description: ""
+tags: ["Windows 7", "拨号激活"]
+description: "Windows 7 激活码无效的时候可以使用拨号激活的方法绕过激活码验证"
 wordpressId: 132
 ---
 激活码：83KF4-HC2RB-WK88R-6PGQG-89D82

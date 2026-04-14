@@ -1,10 +1,10 @@
 ---
 title: "在网页中插入运行时间统计"
-date: 2022-02-06
+date: 2021-08-26
 slug: "在网页中插入运行时间统计"
-categories: ["资料库"]
-tags: []
-description: ""
+categories: ["资料库", "网站运维"]
+tags: ["脚本", "插件"]
+description: "本文介绍了怎么在网页中实现运行时间的计算和展示"
 wordpressId: 128
 ---
 ### 在Head中进行计算

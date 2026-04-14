@@ -1,10 +1,10 @@
 ---
-title: "央视美文分享-02"
+title: "央视美文分享-220423"
 date: 2022-04-23
-slug: "央视美文分享-02"
-categories: ["资讯"]
-tags: []
-description: ""
+slug: "央视美文分享-220423"
+categories: ["随笔"]
+tags: ["央视美文", “央视“, ”随笔”]
+description: "央视节目中的文字与金句摘选"
 wordpressId: 142
 ---
 1、我于窗中窥伤鹤，恰如仰头见春台 。

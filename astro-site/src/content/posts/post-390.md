@@ -2,9 +2,9 @@
 title: "三大运营商网络骨干情况"
 date: 2023-07-07
 slug: "三大运营商网络骨干情况"
-categories: ["未分类"]
-tags: []
-description: ""
+categories: ["咨询", "资料库"]
+tags: [“骨干网络“]
+description: "截止 2023 年 7 月收集到的三大运营商骨干网络情况"
 wordpressId: 390
 ---
 中国大陆目前只有三家骨干网运营商，即 “中国电信（CT）”、“中国移动（CMCC）”、“中国联通（CU）”

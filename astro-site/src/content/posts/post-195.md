@@ -2,9 +2,9 @@
 title: "Linux常用命令（22-06-12更新）"
 date: 2022-06-12
 slug: "linux常用命令（22-06-12更新）"
-categories: ["未分类"]
-tags: []
-description: ""
+categories: ["资料库"]
+tags: ["Linux", "CentOS"]
+description: "记录几个 CentOS 常用到的命令"
 wordpressId: 195
 ---
 ## 相关
@@ -21,4 +21,4 @@ wordpressId: 195
 
 4、开启/禁止 ssh服务开机自启 `systemctl enable sshd` 开启自启动 `systemctl disable sshd` 禁止自启动
 
-5、查看服务器IP信息（二选一） `ipcomfig'` ip addr'
+5、查看服务器IP信息（二选一） `ipcomfig` `ip addr`

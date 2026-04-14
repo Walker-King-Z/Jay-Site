@@ -2,9 +2,9 @@
 title: "安装激活Office 2016"
 date: 2022-02-08
 slug: "安装激活office-2016"
-categories: ["软件教程"]
-tags: []
-description: ""
+categories: ["实用工具", "软件教程"]
+tags: ["Office", "Windows", "Office tool Plus", "激活"]
+description: "通过使用 Office tool Plus 部署 Office 2016 到 Windows 系统，并激活产品。"
 wordpressId: 49
 ---
 （前言：Windows 7 系统建议使用**安装方法1** ，安装Offoce 2016；如果是Win10系统就可以安装2019或是2020,2021了，使用**安装方法2** 就好）

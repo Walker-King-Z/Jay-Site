@@ -1,10 +1,10 @@
 ---
 title: "XMind 2021 激活教程"
-date: 2022-02-06
+date: 2021-06-12
 slug: "xmind-2021-激活教程"
 categories: ["实用工具", "软件教程"]
-tags: []
-description: ""
+tags: ["XMind", "软件", "教程"]
+description: "本文介绍如何激活 XMind 2021 版本。"
 wordpressId: 124
 ---
 截至文章发布，已确定至少适配最新（202105061920 Beta）及以前的版本。

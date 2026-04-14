@@ -3,8 +3,8 @@ title: "IOBit系列激活教程"
 date: 2022-03-08
 slug: "iobit系列激活教程"
 categories: ["实用工具", "软件教程"]
-tags: []
-description: ""
+tags: ["IOBit", "激活"]
+description: "IOBit 系列工具的激活办法"
 wordpressId: 134
 ---
 ### IOBit Advanced Systemcare 15：

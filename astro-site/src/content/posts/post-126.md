@@ -3,8 +3,8 @@ title: "安装激活Office 2016"
 date: 2022-02-08
 slug: "安装激活office-2016-2"
 categories: ["软件教程"]
-tags: []
-description: ""
+tags: ["Office"]
+description: "这里介绍了 Win7 和 Win10 安装 Office 的两种方法"
 wordpressId: 126
 ---
 （前言：Windows 7 系统建议使用**安装方法1** ，安装Offoce 2016；如果是Win10系统就可以安装2019或是2020,2021了，使用**安装方法2** 就好）

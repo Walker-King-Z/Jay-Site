@@ -2,9 +2,9 @@
 title: "iOS开发版 AirPods Pro开发版固件等苹果全家桶更新指南"
 date: 2023-06-27
 slug: "ios开发版-airpods-pro开发版固件等苹果全家桶更新指南"
-categories: ["未分类"]
-tags: []
-description: ""
+categories: ["高级技巧", "咨讯"]
+tags: ["Apple", "全家桶", "Beta", "开发者"]
+description: "这里介绍了苹果全系升级开发者版本的方法"
 wordpressId: 374
 ---
 一、前言 WWDC 2023已经过去好些时日了，兜兜转转也已经把所有设备全部升级到开发版了，毕竟今年各个终端的新功能还是很吸引我的。

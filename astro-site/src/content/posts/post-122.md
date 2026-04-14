@@ -3,8 +3,8 @@ title: "树莓派3B+参数 及 引脚定义"
 date: 2022-02-06
 slug: "树莓派3b参数-及-引脚定义"
 categories: ["资料库"]
-tags: []
-description: ""
+tags: ["树莓派", "资料记录"]
+description: "老是忘记树莓派的参数，干脆就做成这样的分享吧"
 wordpressId: 122
 ---
 **_总说：树莓派3B+（Raspberry Pi 3 Model B +），拥有运行在1.4GHz的处理器，双频2.4GHz和5GHz无线WiFi，蓝牙4.2 / BLE，以太网 以及 一颗64位四核处理器_**
