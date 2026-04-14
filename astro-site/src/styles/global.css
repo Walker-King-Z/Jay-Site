@@ -551,3 +551,21 @@ h1, h2, h3 {
     font-size: 0.76rem;
   }
 }
+
+.aboutPageContent a,
+article a {
+  color: #2563eb;
+  text-decoration: none;
+  background-image: linear-gradient(
+    transparent calc(100% - 2px),
+    rgba(37, 99, 235, 0.4) 2px
+  );
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease;
+}
+
+.aboutPageContent a:hover,
+article a:hover {
+  background-size: 100% 100%;
+}
