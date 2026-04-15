@@ -28,3 +28,6 @@ coverage/
 
 # soft link
 /images
+
+# sync etc. Private files
+migration-tool/sync*
