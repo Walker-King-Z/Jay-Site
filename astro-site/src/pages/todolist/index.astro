@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TodoContent from "../../content/pages/todolist.md";
+---
+
+<BaseLayout title="ToDoList | Jay 的博客" description="Lab J 的待办事项页面">
+  <article class="card page-card prose">
+    <p class="page-kicker">ToDo List</p>
+    <TodoContent />
+  </article>
+</BaseLayout>

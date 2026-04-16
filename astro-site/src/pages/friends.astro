@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { friends } from "../data/friends";
+---
+
+<BaseLayout title="友链 | Jay 的博客" description="Jay 的博客友链页面">
+  <section class="card page-card">
+    <div class="page-header">
+      <p class="page-kicker">Friends</p>
+      <h1>友链</h1>
+      <p class="page-lead">
+        这里会收录我喜欢的网站、朋友们的博客，以及一些我觉得值得常逛的个人主页。
+      </p>
+    </div>
+
+    <div class="friends-grid">
+      {friends.map((friend) => (
+        <a
+          class="friend-card"
+          href={friend.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2>{friend.name}</h2>
+          <p>{friend.desc}</p>
+          <span>{friend.url}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
