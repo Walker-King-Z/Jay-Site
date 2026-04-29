@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../Downloads/jishi-temp-26041601"
+		},
+		{
+			"path": ".."
 		}
 	],
 	"settings": {}
